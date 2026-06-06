@@ -70,29 +70,23 @@ email_mng = EmailManager("smtp.gmail.com", "imap.gmail.com", "login@gmail.com", 
 
 ## Инструкция по запуску:
 
-1. Установите зависимость для работы с переменными окружения:
+### 1. Установите зависимость для работы с переменными окружения:
     
-    Bash
     
-    ```
-    pip install -r requirements.txt
-    ```
+```Bash
+pip install -r requirements.txt
+```
     
-2. Создайте файл `.env` в корне проекта на основе `.env.example` и укажите свои данные:
+### 2. Создайте файл `.env` в корне проекта на основе `.env.example` и укажите свои данные:
     
-    Фрагмент кода
+```Bash
+LOGIN=your_email@gmail.com
+PASSWORD=your_app_specific_password
+```
     
-    ```
-    LOGIN=your_email@gmail.com
-    PASSWORD=your_app_specific_password
-    ```
+_(Примечание: Для авторизации в Gmail требуется использование "Пароля приложения", а не основного пароля аккаунта)._
     
-    _(Примечание: Для авторизации в Gmail требуется использование "Пароля приложения", а не основного пароля аккаунта)._
-    
-3. Запустите скрипт:
-    
-    Bash
-    
-    ```
-    python3 main.py
-    ```
+### 3. Запустите скрипт:    
+```Bash
+python3 main.py
+```
